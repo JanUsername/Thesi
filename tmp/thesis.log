@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.16)  10 OCT 2016 14:35
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.16)  10 OCT 2016 16:48
 entering extended mode
 **thesis.tex
 ("G:\Uni\SVN Thesi\thesis.tex"
@@ -36,20 +36,9 @@ Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ucs\utf8x.def"
-File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ansinew.def"
+File: ansinew.def 2008/03/30 v1.1d Input encoding file
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ucs\ucs.sty"
-Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ucs\uni-global.def"
-File: uni-global.def 2013/05/13 UCS: Unicode global data
-)
-\uc@secondtry=\count88
-\uc@combtoks=\toks16
-\uc@combtoksb=\toks17
-\uc@temptokena=\toks18
-)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2008/07/08 v3.8m The Babel package
 
@@ -64,7 +53,7 @@ Language: english 2005/03/30 v3.3o English support from the babel system
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2008/07/08 v3.8m Babel common definitions
-\babel@savecnt=\count89
+\babel@savecnt=\count88
 \U@D=\dimen103
 )
 \l@canadian = a dialect from \language\l@american 
@@ -76,7 +65,7 @@ Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
-\KV@toks@=\toks19
+\KV@toks@=\toks16
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
@@ -98,7 +87,7 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count90
+\Gread@gobject=\count89
 ))
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
@@ -294,23 +283,23 @@ LaTeX Font Info:    Redeclaring math accent \mathring on input line 256.
 \symUfutm=\mathgroup5
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
-\lst@mode=\count91
+\lst@mode=\count90
 \lst@gtempboxa=\box26
-\lst@token=\toks20
-\lst@length=\count92
+\lst@token=\toks17
+\lst@length=\count91
 \lst@currlwidth=\dimen106
-\lst@column=\count93
-\lst@pos=\count94
+\lst@column=\count92
+\lst@pos=\count93
 \lst@lostspace=\dimen107
 \lst@width=\dimen108
-\lst@newlines=\count95
-\lst@lineno=\count96
+\lst@newlines=\count94
+\lst@lineno=\count95
 \lst@maxwidth=\dimen109
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count97
-\lst@skipnumbers=\count98
+\c@lstnumber=\count96
+\lst@skipnumbers=\count97
 \lst@framebox=\box27
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
@@ -326,8 +315,8 @@ LaTeX Info: Redefining \_ on input line 43.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xstring\xstring.sty"
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xstring\xstring.tex"
 \@xs@message=\write3
-\integerpart=\count99
-\decimalpart=\count100
+\integerpart=\count98
+\decimalpart=\count99
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
@@ -343,31 +332,31 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LTright=\skip44
 \LTpre=\skip45
 \LTpost=\skip46
-\LTchunksize=\count101
+\LTchunksize=\count100
 \LTcapwidth=\dimen110
 \LT@head=\box28
 \LT@firsthead=\box29
 \LT@foot=\box30
 \LT@lastfoot=\box31
-\LT@cols=\count102
-\LT@rows=\count103
-\c@LT@tables=\count104
-\c@LT@chunks=\count105
-\LT@p@ftn=\toks21
+\LT@cols=\count101
+\LT@rows=\count102
+\c@LT@tables=\count103
+\c@LT@chunks=\count104
+\LT@p@ftn=\toks18
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\enumitem\enumitem.sty"
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip47
 \enit@outerparindent=\dimen111
-\enit@toks=\toks22
+\enit@toks=\toks19
 \enit@inbox=\box32
-\enitdp@description=\count106
+\enitdp@description=\count105
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen112
 \extrarowheight=\dimen113
-\NC@list=\toks23
+\NC@list=\toks20
 \extratabsurround=\skip48
 \backup@length=\skip49
 )
@@ -383,116 +372,113 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen121
 \cmidrulekern=\dimen122
 \defaultaddspace=\dimen123
-\@cmidla=\count107
-\@cmidlb=\count108
+\@cmidla=\count106
+\@cmidlb=\count107
 \@aboverulesep=\dimen124
 \@belowrulesep=\dimen125
-\@thisruleclass=\count109
-\@lastruleclass=\count110
+\@thisruleclass=\count108
+\@lastruleclass=\count109
 \@thisrulewidth=\dimen126
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count111
-\float@exts=\toks24
+\c@float@type=\count110
+\float@exts=\toks21
 \float@box=\box33
-\@float@everytoks=\toks25
+\@float@everytoks=\toks22
 \@floatcapt=\box34
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 ("G:\Uni\SVN Thesi\thesis.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 21.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 22.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 22.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fmlfutm.fd"
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 21.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 21.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 22.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 22.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fmsfutm.fd"
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 21.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 21.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 22.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 22.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fmxfutm.fd"
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 21.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 22.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 21.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 22.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\t1futs.fd"
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ucs\ucsencs.def"
-File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
-)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count112
+\scratchcounter=\count111
 \scratchdimen=\dimen127
 \scratchbox=\box35
-\nofMPsegments=\count113
-\nofMParguments=\count114
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count115
+\nofMPsegments=\count112
+\nofMParguments=\count113
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count114
 \MPscratchDim=\dimen128
-\MPnumerator=\count116
-\makeMPintoPDFobject=\count117
-\everyMPtoPDFconversion=\toks27
+\MPnumerator=\count115
+\makeMPintoPDFobject=\count116
+\everyMPtoPDFconversion=\toks24
 )
-\c@lstlisting=\count118
+\c@lstlisting=\count117
 \MyArrowBox=\box36
-LaTeX Font Info:    Try loading font information for FML+futmi on input line 25
+LaTeX Font Info:    Try loading font information for FML+futmi on input line 26
 .
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\fmlfutmi.fd"
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 25.
+(Font)              scaled to size 11.03998pt on input line 26.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 25.
+(Font)              scaled to size 8.27998pt on input line 26.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 25.
+(Font)              scaled to size 6.43999pt on input line 26.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 25.
+(Font)              scaled to size 11.03998pt on input line 26.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 25.
+(Font)              scaled to size 8.27998pt on input line 26.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 25.
-\c@index=\count119
+(Font)              scaled to size 6.43999pt on input line 26.
+\c@index=\count118
 
 <img/logo.pdf, id=1, 289.48845pt x 101.5807pt>
 File: img/logo.pdf Graphic file (type pdf)
  <use img/logo.pdf>
-Package pdftex.def Info: img/logo.pdf used on input line 54.
+Package pdftex.def Info: img/logo.pdf used on input line 55.
 (pdftex.def)             Requested size: 405.28105pt x 142.21199pt.
  [1
 
@@ -501,7 +487,7 @@ Package pdftex.def Info: img/logo.pdf used on input line 54.
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <G:/Uni/SVN Thesi/img/logo
 .pdf>]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 59.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 60.
 
 ("G:\Uni\SVN Thesi\thesis.toc")
 \tf@toc=\write4
@@ -521,32 +507,471 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
  [4
 
 ]
-("G:\Uni\SVN Thesi\chapters/Einleitung.tex") ("G:\Uni\SVN Thesi\thesis.bbl"
+("G:\Uni\SVN Thesi\chapters/Einleitung.tex"
+
+! Package textcomp Error: Symbol \textcurrency not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 Testfä
+           lle sind die einzelnen Tests die durchgeführt werden um sicherzu...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 4.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\ts1futs.fd"
+File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
+)
+
+! Package textcomp Error: Symbol \textcurrency not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 Die Testä
+              lle werden erstellt von den jeweiligen Verantwortlichen erstel...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textcurrency not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ... die Wartbarkeit der dokumentierten Testfä
+                                                  lle. Ständige Veränderun...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textcurrency not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...barkeit der dokumentierten Testfälle. Stä
+                                                  ndige Veränderungen bei d...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textcurrency not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ... dokumentierten Testfälle. Ständige Verä
+                                                  nderungen bei den MAX Anwe...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textcurrency not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...wird die Eingabe der dokumentierten Testfä
+                                                  lle über vorgegebenen Dro...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textcurrency not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 ...e-Lösungen an. Diese unterstehen regelmä
+                                                  ßigen Updates (bis zu 7 U...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textcurrency not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 ...eitersparnis durch die Abnahme der Testfä
+                                                  lle per Computer. Automati...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textcurrency not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 ...ct check with reality)). Manueller Testfä
+                                                  lle hingegen dauern Tage u...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textcurrency not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...s beginnt mit der Auffindung aller Testfä
+                                                  lle. Diese werden dann dok...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textcurrency not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...tisierung ist die  Dokumentation. Hauptsä
+                                                  chlich liegt der Vorteil b...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textcurrency not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...ass auch wenn ein Experte oder Wissensträ
+                                                  ger verloren geht, nicht d...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textcurrency not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...nes Scripts. Diese Dokumentation wird spä
+                                                  ter verwendet um Testfäll...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textcurrency not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...entation wird später verwendet um Testfä
+                                                  lle manuell durchzuspielen.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (7.07448pt too wide) in paragraph at lines 10--20
+\T1/futs/m/n/12 Ma-te-rial das repari-ert und wieder im Um-lauf ge-bracht wird,
+ wie ein Flugzeuggetriebe,
+ []
+
 [1
 
 
 ]
 
+! Package textcomp Error: Symbol \textcurrency not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 ...fall nachspielt. Dieses Script ist unabhä
+                                                  ngig von der Dokumentation...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textcurrency not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 ... werden nur in den automatisierten Testfä
+                                                  llen eingespielt.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (8.5474pt too wide) in paragraph at lines 23--24
+[][]\T1/futs/m/n/12 Object Ac-tion genauer beschreiben + Beschrei-bungssprache 
+und For-male Sprache
+ []
+
+
+! Package textcomp Error: Symbol \textcurrency not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 Die Übertragung der Testfä
+                                 lle in HP Quality Center funktioniert, ist ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textcurrency not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ... Textfeld basierten Input aber Fehleranfä
+                                                  llig. Noch dazu ist der Au...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textcurrency not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ...ss diese bei der großen Anzahl an Testfä
+                                                  llen die Dokumentation Anp...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textcurrency not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 1.1.	Schwer bis unmöglich manuelle Testfä
+                                                lle zu warten
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textcurrency not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...Ändert sich die Maske, durch die regelmä
+                                                  ßigen Updates, wird diese...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textcurrency not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...richtig zu Pflegen beinhaltet alle Testfä
+                                                  lle durchzugehen und wo au...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textcurrency not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...estfälle durchzugehen und wo auf die geä
+                                                  nderte Oberfläche zugegri...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textcurrency not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...zugehen und wo auf die geänderte Oberflä
+                                                  che zugegriffen wird demen...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textcurrency not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...che zugegriffen wird dementsprechend zu ä
+                                                  ndern. Folglich sind diese...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textcurrency not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...skalierbar und bereits bei wenigen Testfä
+                                                  llen ist mit Änderungen g...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+Overfull \hbox (7.94199pt too wide) in paragraph at lines 25--75
+\T1/futs/m/n/12 Name angegeben. Bei der ��ber-tra-gung in das HP tool wird dies
+ manuell eingepflegt.
+ []
+
+("G:\Uni\SVN Thesi\thesis.bbl" [2]
+
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [2
+) [3
 
 ] ("G:\Uni\SVN Thesi\thesis.aux") ) 
 Here is how much of TeX's memory you used:
- 4917 strings out of 493921
- 68978 string characters out of 3144879
- 156491 words of memory out of 3000000
- 8108 multiletter control sequences out of 15000+200000
- 45197 words of font info for 48 fonts, out of 3000000 for 9000
+ 4727 strings out of 493921
+ 65127 string characters out of 3144879
+ 148916 words of memory out of 3000000
+ 7919 multiletter control sequences out of 15000+200000
+ 50724 words of font info for 54 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 28i,5n,40p,441b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,5n,40p,657b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc
-/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/uto
-pia/putb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr
+/dvips/fontname/8r.enc} <C:\Users\JanR\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
+\jknappen\ec\dpi600\tcrm1200.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
+public/fourier/fourier-alt.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/a
+dobe/utopia/putb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/uto
+pia/putr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr
 8a.pfb>
-Output written on thesis.pdf (7 pages, 63579 bytes).
+Output written on thesis.pdf (8 pages, 89967 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
+ 108 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

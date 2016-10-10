@@ -1,1 +1,12 @@
 \chapter*{Lösungen}
+
+4. Lösung
+4.1 Object Repository
+Im Fokus steht ein Object Repository für Object Path und Object Name. Pro Eintrag in dieser Liste muss jedes Element genau identifiziert sein. Aus diesem soll der User später die Einträge vom Element in das HPQC nehmen. Zugriff hat dieser direkt im HPQC bei der Eingabe-Maske über ein Drop-Down Menü.
+4.2 UTF XML
+Die Liste wird dynamisch aus bereits automatisierten Tests erstellt. Zugriff darauf hat man mit UFT (Unified Functional Testing). Über diese Software kann man über bereits erstellte Scripts in VBS die angesprochenen Elemente auslesen. Hier kann man alle Test-Scripts ansprechen und hat somit alle Elemente die angesprochen werden abgedeckt. Die Ausgabe erfolgt in einem XML Format.
+4.3. Workflow
+Der Workflow ist eine Schnittstelle an der man sich anbinden kann um die Übertragung ins HPQC zu verändern. In unseren Fall die Eingabemaske. Einfache Textfelder (in HTML Editfields) werden durch Listen ersetzt. Aus diesen wählt man sich das Ergebnis gewünschte Ergebnis. So ist es möglich ein Element zu verändern und über alle Testfälle übergreifenden ändern mit einem einzelnen Eingriff in das Object Repository. (wo denn?). Parallel dazu wird die Fehlerquote reduziert, die mit manueller Eingabe vorkommen.
+4.4. Binary Repräsentation
+Der Object Path wird in Zukunft mit mehreren Feldern angezeigt, dass die Eingabe erleichtert. Wird eine Applikation ausgewählt gibt es im ersten Object Path Feld nur die Elemente auszuwählen die auch in der Maske sind. So geht es mit Unterseiten oder Reitern weiter bis wir beim gewünschten
+Objekt sind. Dieser wird mit der Element- Art verknüpft, sprich Button, Editfield usw. Das soll dazu führen das nur die Objekte dargestellt werden die auch ausgewählt werden die auch mit der vorher eingegeben Objekt Art übereinstimmen. Vor dieser Auswahl bleibt das Feld Object Name ausgegraut. Es entsteht eine Baumstruktur die das Navigieren in diesen einfacher gestaltet als eine große Liste.

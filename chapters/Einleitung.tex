@@ -1,1 +1,30 @@
 \chapter*{Einleitung}
+
+\label{Einleitung}
+Testfälle sind die einzelnen Tests die durchgeführt werden um sicherzustellen, dass Anwendungen funktionieren wie erwartet. 
+Diese Anwendungen werden in der Supply Chain für Materialbestellungen verwendet. Diese MAX Anwendungen spielen mit SAP zusammen. 
+Die Teställe werden erstellt von den jeweiligen Verantwortlichen erstellt und
+besitzen dann einen fixen Ablauf. Mit HP Application Lifecycle Manager werden diese dokumentiert.
+Durch die Erweiterung dieses verbessert sich die Wartbarkeit der dokumentierten Testfälle. Ständige Veränderungen bei den MAX Anwendungen erschweren diese. Auch verbessert wird die Eingabe der dokumentierten Testfälle über vorgegebenen Dropdown Menüs.
+
+Supply Chain Lufthansa and Max and Integrationstests
+Lufthansa ist mit fast 126.000 Mitarbeitern eine der größten Fluggesellschaften weltweit. Diese wird aufgeteilt in Passagierbeförderung, Fracht, Technik, Catering, IT- Dienstleistungen und Service –und Finanzgesellschaft. Dieses Projekt wurde in der Lufthansa Technik realisiert. Genauer im Bereich der Supply Chain. Der Einsatzbereich der Supply Chain ist die Versorgung von Materialen für Kunden. Diese werden unterteilt in Material das repariert und wieder im Umlauf gebracht wird, wie ein Flugzeuggetriebe, als auch Material das einfach aufgestockt wird wie Schrauben etc.
+Um den Kunden ein Interface bieten zu können über denen sie gewünschte Bestellungen abgeben können, bietet Lufthansa verschiedene Software-Lösungen an. Diese unterstehen regelmäßigen Updates (bis zu 7 Updates im Jahr)((source)). Um sicherzugehen das nach einem Update alles noch funktioniert wie es sollte wurden bis vor kurzen Integrationstests abgehalten, die daraus bestanden die Applikationen manuell durchzuklicken. Diese Arbeitszeit soll nun mit automatischen Tests reduziert  werden. ((insert source about Lufthansa))
+2.2 Testdokumentation  / Testautomatisierung 
+Die Vorteile der Testautomatisierung sind in erster Linie Zeitersparnis durch die Abnahme der Testfälle per Computer. Automatisierte Tests laufen, ohne menschliche Interaktion,  in bis zu 20 h durch((insert source, fact check with reality)). Manueller Testfälle hingegen dauern Tage und bedürfen Menschen die sie durchklicken. Durch die Reduzierung der menschlichen Interaktion auf ein Minimum entstehen auch weniger Probleme falls ein Experte für einen bestimmten Bereich nicht anwesend sein kann, sondern wird nur noch benötigt falls die Tests nicht erfolgreich abgeschlossen werden können. 
+Ein Automatisierungszyklus beginnt mit der Auffindung aller Testfälle. Diese werden dann dokumentiert. Der erste Schritt der Dokumentation beginnt mit einem Tool namens „SAP Workforce Performance Builder“. Dieses ist ein Werkzeug um automatisch bei jeden User Input Screenshots  zu erstellen. So kann ein Testfall in erster Instanz abgebildet sein.
+Ein Schritt zur Automatisierung ist die  Dokumentation. Hauptsächlich liegt der Vorteil bei Dokumentation dabei, dass auch wenn ein Experte oder Wissensträger verloren geht, nicht das Wissen selbst verloren ist.
+Die Dokumentation beginnt mit Übertragung des Testfalls in das HP Tool „Application Lifecycle Manager“ ((insert screenshot)). Hier werden die Schritte einzeln in eine Tabelle eingegeben. Ein einzelner Testschritt besteht aus: wo genau die Aktion stattfindet, was für ein Input kommt, welches Objekt an der Maske angesprochen wird. Ein Testschritt kann auch eine SQL abfrage sein oder der 
+Start eines Scripts. Diese Dokumentation wird später verwendet um Testfälle manuell durchzuspielen. 
+Manuelle Tests bedarf es bei Tests die nicht zu Automatisieren sind. Parallel dazu werden manuelle Test verwendet bei fehlgeschlagenen automatisierten Tests den Fehler zu suchen.                                                                                             
+ 
+Ist ein Testfall komplett übertragen und kontrolliert (4 Augen Prinzip) wird er nach Budapest ((Testfactory/ Testautomatisierung))f reigegeben, wo mit Hilfe von Visual Basic in Script erstellt wird, der den Testfall nachspielt. Dieses Script ist unabhängig von der Dokumentation im HPQC, auch wenn dieses darauf basiert. Änderungen an der Maske werden nur in den automatisierten Testfällen eingespielt. 
+
+Object Action genauer beschreiben + Beschreibungssprache und Formale Sprache (aus dem Wiki) + outsourcing probleme
+
+3.1. Ausgangssituation
+Die Übertragung der Testfälle in HP Quality Center funktioniert, ist durch Textfeld basierten Input aber Fehleranfällig. Noch dazu ist der Aufwand bei Änderungen zu hoch, so dass diese bei der großen Anzahl an Testfällen die Dokumentation Anpassung  ganz wegbleibt. Die betrifft jetzt nicht automatisierte Tests. Hier das Visual Basic Script angepasst.
+((Es funktioniert aber könnte besser sein, bei Pflege))
+1.1.	Schwer bis unmöglich manuelle Testfälle zu warten 
+((Anders Beginnen, kein geeigneter erster Unterpunkt, braucht mehr roten Faden))
+Ein entscheidender Punkt in der Dokumentation ist die Angabe wo ein bestimmtes Element sich befindet. Dies wird mit Object Path und Object Name angegeben. Bei der Übertragung in das HP tool wird dies manuell eingepflegt. Ändert sich die Maske, durch die regelmäßigen Updates, wird diese Angabe falsch. Dies richtig zu Pflegen beinhaltet alle Testfälle durchzugehen und wo auf die geänderte Oberfläche zugegriffen wird dementsprechend zu ändern. Folglich sind diese Tests nicht skalierbar und bereits bei wenigen Testfällen ist mit Änderungen großer Aufwand verbunden.
