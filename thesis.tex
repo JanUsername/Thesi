@@ -1,0 +1,80 @@
+\documentclass[12pt,a4paper,oneside]{book}
+
+\usepackage[utf8x]{inputenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{fourier}
+\usepackage{listings}
+\usepackage{hyphenat}
+\usepackage{xstring}
+\usepackage{forloop}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{array,booktabs}
+\usepackage{float}
+
+\lstset{basicstyle=\tt, identifierstyle=\tt, commentstyle=\tt, stringstyle=\tt, keywordstyle=\tt, language=Java, numbers=left, numberstyle=\tiny, numbersep=5pt, tabsize=2, showtabs=false, showspaces=false, showstringspaces=false, prebreak=\mbox{\tiny$\searrow$}, breakindent=0pt, breaklines, breakautoindent=true, captionpos=b}
+
+\oddsidemargin 1,5cm
+\textwidth 14,5cm 
+ 
+\begin{document}
+\frontmatter
+
+\newsavebox\MyArrowBox%
+\sbox\MyArrowBox{$\hookleftarrow$}%
+\makeatletter%
+\newcommand*{\BreakableChar}{%
+  \leavevmode%
+  \prw@zbreak%
+  %\discretionary{}{}{}%
+  %\discretionary{-}{}{}% If want a dash
+  \discretionary{\usebox\MyArrowBox}{}{}%
+  \prw@zbreak%
+}%
+
+\newcounter{index}%
+\newcommand{\url}[1]{%
+  \texttt{%
+  \StrLen{#1 }[\stringLength]%
+  \forloop[1]{index}{1}{\value{index}<\stringLength}{%
+    \StrChar{#1}{\value{index}}[\currentLetter]%
+    {\currentLetter\BreakableChar}%
+  }%
+  }%
+}%
+
+% define here the properties of the title page
+\def\title{adfasdf}
+\def\author{Jan Schmid Niederkofler}
+\def\advisor{Andrea Janes}
+\def\date{October, 2015}
+
+\begin{titlepage}
+\begin{center}\includegraphics[scale=1.4]{img/logo.pdf}\\\LARGE\vspace{80pt}BACHELOR THESIS\vspace{50pt}\\{\huge\title}\\\vspace{50pt}\author \end{center}\Large\begin{flushright}\vspace{90pt}Supervisor: \advisor\\\date\end{flushright}
+\end{titlepage}
+
+%\input{chapters/abstract}
+
+\tableofcontents
+\listoftables
+\listoffigures
+\lstlistoflistings
+
+\mainmatter
+
+\input{chapters/Einleitung}
+%\input{chapters/background}
+%\input{chapters/problem_statement}
+%\input{chapters/literature}
+%\input{chapters/problem_solution}
+%\input{chapters/discussion}
+%\input{chapters/conclusion}
+%\input{chapters/help}
+
+\appendix
+
+\bibliographystyle{plain}                                 
+\bibliography{bibliography}
+
+\end{document}

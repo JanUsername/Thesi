@@ -1,0 +1,103 @@
+\chapter{Some help on \LaTeX}
+
+These are some examples you may find useful:
+
+\section{Citations}
+You have to define reference material in a separate file called
+``bibliography.bib''. Example of a citation: \cite{Abrahamsson2002}. As we say in section \ref{sec:figures}, bla bla\ldots
+
+\section{Images}
+\label{sec:figures}
+
+This is an example of a figure:
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.25]{img/figure.pdf}
+	\caption{Some description.}
+	\label{fig:Lion}
+\end{figure}
+
+\section{Footnotes}
+Here is an example of a footnote\footnote{But do not use it too frequently :)}.
+Please use footnotes only to provide the web site of any technology or product, e.g., Microsoft Word\footnote{Microsoft Word, http://office.microsoft.com/en-us/word}.
+
+\section{Formulas}
+\LaTeX~is perfect for formulas: 
+\begin{equation}
+	\label{equ:formula1}
+	{\frac {d}{dx}}\arctan(\sin({x}^{2}))=-2\,{\frac {\cos({x}^{2})x}{-2+\left (\cos({x}^{2})\right )^{2}}}
+\end{equation}
+
+As you see in formula \ref{equ:formula1}, you can insert very nice formulas in your thesis too!
+
+\section{Tables}
+Here an example of how to create a table. 
+
+\setlength{\tabcolsep}{6pt}
+\begin{longtable}[l]{p{1,2cm}p{0,4cm}p{11,6cm}} % colonne
+\caption{Entities and questions derived from the business goal 1: Eliminate waste to become more efficient.} 
+\label{tab:50} \\
+
+\hline\noalign{\smallskip}
+Entity & \multicolumn{2}{l}{Question} \\[2pt]
+\hline
+\endfirsthead
+ 
+\multicolumn{3}{l}{\tablename\ \thetable{}, continued from the previous page} \\ % If you change the number of columns, update the value 3 here to the total number of columns
+\hline\noalign{\smallskip}
+Entity & \multicolumn{2}{l}{Question} \\[2pt]
+\hline
+\endhead
+
+\multicolumn{3}{r}{Continues on next page} \\ % If you change the number of columns, update the value 3 here to the total number of columns
+\endfoot
+
+\noalign{\smallskip}\hline\noalign{\smallskip}
+\endlastfoot
+
+Product  & 1.1  & How much modified source code is not committed? 
+                  \newline Rationale: Work that has be modified but not committed is like an inventory of unfinished goods.  
+                  \newline Trade-off: We have to avoid having too much rework and at the same avoid spending too much time in developing a modular architecture. \\\hline
+Product  & 1.2  & How much committed source code is not tested? 
+                  \newline Rationale: The probability that untested source code contains defects is higher then in tested source code. Fixing defects later might generate more costs than testing now. On the other hand, testing requires time in which we cannot do other things. 
+                  \newline Trade-off: We have to avoid testing too much and at the same time avoid testing too little. If we have too many defects we loose our reputation and credibility. \\
+\end{longtable}
+
+\section{Code}
+If you want to include code examples, you should use the lstlisting environment: 
+
+{\small
+\begin{lstlisting}[caption=A listing example]
+public ArrayList getList() {	
+	ArrayList l = new ArrayList();
+	Connection c = null;
+	try {
+		c = DatabaseTools.getConnection();
+		Statement p = c.createStatement();
+		ResultSet r = p.executeQuery("SELECT id, \"name\", readonly FROM \"group\" ORDER BY \"name\"");
+		while (r.next()) {
+			HashMap h = new HashMap();
+			h.put("id", r.getString(1));
+			h.put("name", r.getString(2));
+			h.put("readonly", new Boolean(r.getBoolean(3)));
+			l.add(h);
+		}
+	} catch (Exception e) {
+		e.printStackTrace();
+	} finally {
+		if (c != null) {
+			try {
+				c.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	
+	return l;
+}
+\end{lstlisting}
+}
+
+Using the line numbers it is also easier to reference to them within the text~\cite{Maps2014}.

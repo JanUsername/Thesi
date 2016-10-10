@@ -1,0 +1,65 @@
+\renewcommand{\theenumi}{\Alph{enumi}}
+
+\chapter{Problem Statement}
+\label{sec:ProblemStatement}
+
+Explain the scope of your work, what will and will not be included. Is it
+obvious where introductory material ("old stuff") ends and your contribution
+("new stuff") begins? You should organize this section by idea, and not by
+author or by publication. This section has tree main parts:
+
+\begin{enumerate}
+  \item a concise statement of the question that your thesis tackles
+  \item justification, by direct reference to chapter
+  \ref{sec:ReviewOfTheStateOfTheArt}, that your question is previously
+  unanswered
+  \item discussion of why it is worthwhile to answer this question.
+\end{enumerate}
+
+\section{Requirements}
+
+\label{sec:Requirements}
+
+\begin{enumerate}[label=\bfseries Goal:]%\arabic*:]
+  \item The goal is a system with a flying component that is able get to a accident in a remote location and provide pictures.
+\end{enumerate}
+
+\begin{enumerate}[label=\bfseries D \arabic*:]
+  \item The user of the system shall be able to control the flying component.
+  \item The user shall be able to take pictures remotely.
+  \item The user shall see the picture taken remotely in real time.
+  \item The system must not force the user to move his location.
+\end{enumerate}
+
+\begin{enumerate}[label=\bfseries F \arabic*:]
+  %\setcounter{enumi}{4}
+  \item The user shall enter the coordinates into the ground station to which the flying component should fly.
+  \item The system should find the fastest way to the operation area.
+  \item The system shall be aware of the ground elevation in the operation range.
+  \item The system shall provide a 360° view of the accident.
+  \item The flying component should be controllable by a direct manual controller.
+  \item The ground station shall provide a map with the flying component’s current location.
+  \item The ground station shall provide the battery status of the flying component.
+  \item The ground station shall provide the battery status of the flying component.
+  \item The ground station shall indicate how much time is left before the flying component’s energy source will not allow the return flight any more.
+  \item The flying component shall be able to recover from control signal loss.
+  \item The flying component shall be able to return to a previously specified location and land in case of failure.
+  \item The flying component shall take off and land autonomously.
+  \item The system should allow real time video streaming from the remote location.
+  \item The system should allow real time audio streaming from the remote location.
+\end{enumerate}
+
+\begin{enumerate}[label=\bfseries Q \arabic*:]
+  %\setcounter{enumi}{4}
+  \item The flying component shall take less than 5 minutes to fly 5 km with an altitude difference of 500m.
+  \item The system's ground station shall be implemented as software.
+  \item The ground station shall run on at least one out of Linux and Windows.
+  \item The flying component shall be powered/recharged by electric current.
+  \item Real time shall be less than 1 seconds for control commands.
+  \item Real time shall be less than 2 seconds for pictures.
+  \item Real time should be less than 1 second for streaming.
+  \item The operating range shall be more then 10 km at 200 m over sea level.
+  \item Pictures taken by the flying component shall have at least 2 MPx.
+  \item The system shall be soft real time.
+  \item System maintenance must not exceed 2 days per year
+\end{enumerate}
