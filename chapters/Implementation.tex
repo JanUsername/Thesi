@@ -1,9 +1,15 @@
-\chapter*{Implementation}
-
-4. Implementation
-4.1. OTA / tdconnect, Visual Basic Script
-Die Open Test Architecture API (OTA) erlaubt es mit tdconnect Zugriff auf HP Application Lifecycle Manager über externe Scripte zu haben. Die Schnittstelle wird mit Visual Basic Script angesprochen. Für diesen Zweck wurde Visual Basic Script C# bevorzugt da diese Sprache für HPQC am geeignetsten ist. VBS ist gut dokumentiert und verfügt über eine viel größere Bibliothek was die Steuerung des Tools anbelangt. Der Workflow von HPQC ist auch mit VBS beschrieben, was eine Andockung mit der selbigen vereinfacht. C# scheint zu diesen Zeitpunkt noch nicht für die Software ausgearbeitet genug zu sein. Das kann sich in Zukunft vielleicht ändern.
-4.2. Listen adden + Elemente
+\chapter{Implementation}
+\section{OTA / tdconnect, Visual Basic Script}
+Die Open Test Architecture API (OTA) erlaubt es mit tdconnect Zugriff auf HP
+Application Lifecycle Manager über externe Scripte zu haben. Die Schnittstelle
+wird mit Visual Basic Script angesprochen. Für diesen Zweck wurde Visual Basic
+Script C(sharp) bevorzugt da diese Sprache für HPQC am geeignetsten ist. VBS ist
+gut dokumentiert und verfügt über eine viel größere Bibliothek was die Steuerung des
+Tools anbelangt. Der Workflow von HPQC ist auch mit VBS beschrieben, was eine
+Andockung mit der selbigen vereinfacht. C(sharp) scheint zu diesen Zeitpunkt
+noch nicht für die Software ausgearbeitet genug zu sein. Das kann sich in Zukunft vielleicht ändern.
+\section{ Listen adden + Elemente}
+\begin{lstlisting}
 ' Add list under costumization -> Project Lists;
 Sub AddList(tdConnection)
 MsgBox("adding lists like a champ")
@@ -25,6 +31,6 @@ Wend
 custom.Commit
 End Sub
 [Code beschreiben]
-4.3. Sublisten adden
-4.4. Aus XML auslesen
-4.5. Ergebnis
+\end{lstlisting}
+\section{Aus XML auslesen}
+\section{Ergebnis}

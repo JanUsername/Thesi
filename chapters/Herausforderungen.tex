@@ -1,9 +1,12 @@
-3. Problemstellung
-3.2 Warum HP Quality Center
-Durch eine einzige Plattform die dieses Tool für Lebenszyklen und Test Management bereitstellt macht es für die Testautomatisierung geeignet. Die Testdokumentation und dessen Automatisierung folgt gewissen Zyklen [explaining here or somewhere else, or at all? ] die sich in HP QC unter „Status“ wiedergeben lässt. Das Projekt ist nicht zentral und wird teilweise outsourcend und bei Setzung dieses Status weiß wann welche Personen jetzt für den nächsten Schritt verantwortlich sind. Diese werden benachrichtigt sobald dieser in den eigenen Aufgabenbereich fällt.
-3.3 Requierments
-Im Rahmen dieser Arbeit wird über UFT eine XML aus den bereits automatisierten Testfällen alle bekannten Objekten ausgelesen und über in ein Object Repostory eingespielt. Auf diesen wird über
-den ALM Explorer mit Dropdown Menüs dem Endnutzer Zugriff gegeben. Der gesamte Pfad zu einem Objekt hin muss über dieselbe HP QC GUI erkenntlich sein.
-Es muss eine Möglichkeit bestehen Objekte die neu hinzugekommen sind trotzdem einzuspielen. Am besten ohne externe Anbindungen und direkt über den Input an der grafischen Oberfläche.
-Im Besonderen darf das Projekt HP QC nicht deutlich langsamer machen. Wird das Tool bis zur Unbrauchbarkeit langsamer überwiegen die Nachteile den Vorteilen und das Projekt wird überflüssig.
-[Noch nicht sicher wo das hingehört]
+\chapter{Herausforderungen}
+
+[In der Zusammenfassun so lange nicht aktive Probleme. Dargestellt wie in Zukunft ausbaufähig und könnte und den Umständen Probleme machen. Alles komplett abschließen, keine Offenen Enden]
+\section{Rechte in einen Großkonzern} 
+Bei einen solchen Tool arbeiten zu können, kann man nicht auf Produktion arbeiten sondern ist es von Vorteil in einer „Sandbox zu arbeiten“. Diese verhindert das beim Arbeiten beim Tool Leute stört die gerade mit diesen Arbeiten.
+\section{Semaphore / Visual Basic}
+Semaphore sind eine Herausforderung da HPQC Zugriff auf die Daten mit semaphoren kann sperren und es an Lösungen gedacht werden muss die immer funktionieren.
+\section{XML Parsing}
+\section{Zeigen von großen Datenmengen auf wenig Feldern}
+Die Auswahl von dem gewünschten Element wird schwierig wenn eine Liste tausende Elemente enthält. Eine Möglichkeit dies zu vereinfachen ist die Liste auf mehreren Listen aufzuteielen, die dynamisch generiert werden, abhängig von der vorigen Auswahl.
+\section{Workflow in HPQC}
+Der Workflow in HPQC besteht aus großteil unkommentierten 2000 LOC ohne Dokumentation, alles auf nur eine Seite. Dies kann dazu führen das leicht die Übersicht verloren geht und Fehler passieren.

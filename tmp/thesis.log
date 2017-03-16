@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.16)  10 OCT 2016 16:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.16)  16 MAR 2017 14:18
 entering extended mode
 **thesis.tex
 ("G:\Uni\SVN Thesi\thesis.tex"
@@ -489,489 +489,182 @@ Package pdftex.def Info: img/logo.pdf used on input line 55.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 60.
 
-("G:\Uni\SVN Thesi\thesis.toc")
-\tf@toc=\write4
+("G:\Uni\SVN Thesi\thesis.toc"
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 2.
  [1
 
-] ("G:\Uni\SVN Thesi\thesis.lot")
+])
+\tf@toc=\write4
+ [2] ("G:\Uni\SVN Thesi\thesis.lot")
 \tf@lot=\write5
- [2
 
-]
-("G:\Uni\SVN Thesi\thesis.lof")
+[3
+
+] ("G:\Uni\SVN Thesi\thesis.lof")
 \tf@lof=\write6
- [3
+ [4
 
 ] ("G:\Uni\SVN Thesi\thesis.lol")
 \tf@lol=\write7
- [4
 
-]
-("G:\Uni\SVN Thesi\chapters/Einleitung.tex"
+[5
 
-! Package textcomp Error: Symbol \textcurrency not provided by
-(textcomp)                font family futs in TS1 encoding.
-(textcomp)                Default family used instead.
+] ("G:\Uni\SVN Thesi\chapters/Einleitung.tex"
+Chapter 1.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 3.
 
-See the textcomp package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.4 Testfä
-           lle sind die einzelnen Tests die durchgeführt werden um sicherzu...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-LaTeX Font Info:    Try loading font information for TS1+futs on input line 4.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fourier\ts1futs.fd"
-File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
-)
-
-! Package textcomp Error: Symbol \textcurrency not provided by
-(textcomp)                font family futs in TS1 encoding.
-(textcomp)                Default family used instead.
-
-See the textcomp package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.6 Die Testä
-              lle werden erstellt von den jeweiligen Verantwortlichen erstel...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+Overfull \hbox (0.2385pt too wide) in paragraph at lines 4--8
+\T1/futs/m/n/12 dieses verbessert sich die Wart-barkeit der doku-men-tierten Te
+st-f�lle. St�ndige Ver�n-
+ []
 
 
-! Package textcomp Error: Symbol \textcurrency not provided by
-(textcomp)                font family futs in TS1 encoding.
-(textcomp)                Default family used instead.
-
-See the textcomp package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 ... die Wartbarkeit der dokumentierten Testfä
-                                                  lle. Ständige Veränderun...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+Overfull \hbox (16.20328pt too wide) in paragraph at lines 9--12
+[][]\T1/futs/m/n/12 Supply Chain Lufthansa Lufthansa ist mit fast 126.000 Mi-ta
+r-beit-ern eine der gr��ten
+ []
 
 
-! Package textcomp Error: Symbol \textcurrency not provided by
-(textcomp)                font family futs in TS1 encoding.
-(textcomp)                Default family used instead.
-
-See the textcomp package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 ...barkeit der dokumentierten Testfälle. Stä
-                                                  ndige Veränderungen bei d...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+Overfull \hbox (0.71858pt too wide) in paragraph at lines 9--12
+\T1/futs/m/n/12 Tech-nik, Cater-ing, IT- Di-en-stleis-tun-gen und Ser-vice und
+ Fi-nanzge-sellschaft. Dieses
+ []
 
 
-! Package textcomp Error: Symbol \textcurrency not provided by
-(textcomp)                font family futs in TS1 encoding.
-(textcomp)                Default family used instead.
-
-See the textcomp package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 ... dokumentierten Testfälle. Ständige Verä
-                                                  nderungen bei den MAX Anwe...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+Overfull \hbox (0.80257pt too wide) in paragraph at lines 13--19
+\T1/futs/m/n/12 Test-f�lle hinge-gen dauern Tage und bed�r-fen Men-schen die si
+e durchk-licken. Durch
+ []
 
 
-! Package textcomp Error: Symbol \textcurrency not provided by
-(textcomp)                font family futs in TS1 encoding.
-(textcomp)                Default family used instead.
-
-See the textcomp package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 ...wird die Eingabe der dokumentierten Testfä
-                                                  lle über vorgegebenen Dro...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package textcomp Error: Symbol \textcurrency not provided by
-(textcomp)                font family futs in TS1 encoding.
-(textcomp)                Default family used instead.
-
-See the textcomp package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.12 ...e-Lösungen an. Diese unterstehen regelmä
-                                                  ßigen Updates (bis zu 7 U...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package textcomp Error: Symbol \textcurrency not provided by
-(textcomp)                font family futs in TS1 encoding.
-(textcomp)                Default family used instead.
-
-See the textcomp package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.14 ...eitersparnis durch die Abnahme der Testfä
-                                                  lle per Computer. Automati...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package textcomp Error: Symbol \textcurrency not provided by
-(textcomp)                font family futs in TS1 encoding.
-(textcomp)                Default family used instead.
-
-See the textcomp package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.14 ...ct check with reality)). Manueller Testfä
-                                                  lle hingegen dauern Tage u...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package textcomp Error: Symbol \textcurrency not provided by
-(textcomp)                font family futs in TS1 encoding.
-(textcomp)                Default family used instead.
-
-See the textcomp package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.15 ...s beginnt mit der Auffindung aller Testfä
-                                                  lle. Diese werden dann dok...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package textcomp Error: Symbol \textcurrency not provided by
-(textcomp)                font family futs in TS1 encoding.
-(textcomp)                Default family used instead.
-
-See the textcomp package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.16 ...tisierung ist die  Dokumentation. Hauptsä
-                                                  chlich liegt der Vorteil b...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package textcomp Error: Symbol \textcurrency not provided by
-(textcomp)                font family futs in TS1 encoding.
-(textcomp)                Default family used instead.
-
-See the textcomp package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.16 ...ass auch wenn ein Experte oder Wissensträ
-                                                  ger verloren geht, nicht d...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package textcomp Error: Symbol \textcurrency not provided by
-(textcomp)                font family futs in TS1 encoding.
-(textcomp)                Default family used instead.
-
-See the textcomp package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.18 ...nes Scripts. Diese Dokumentation wird spä
-                                                  ter verwendet um Testfäll...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package textcomp Error: Symbol \textcurrency not provided by
-(textcomp)                font family futs in TS1 encoding.
-(textcomp)                Default family used instead.
-
-See the textcomp package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.18 ...entation wird später verwendet um Testfä
-                                                  lle manuell durchzuspielen.
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (7.07448pt too wide) in paragraph at lines 10--20
-\T1/futs/m/n/12 Ma-te-rial das repari-ert und wieder im Um-lauf ge-bracht wird,
- wie ein Flugzeuggetriebe,
+Overfull \hbox (20.76662pt too wide) in paragraph at lines 13--19
+\T1/futs/m/n/12 sein kann, son-dern wird nur noch ben�tigt falls die Tests nich
+t er-fol-gre-ich abgeschlossen
  []
 
 [1
 
 
 ]
-
-! Package textcomp Error: Symbol \textcurrency not provided by
-(textcomp)                font family futs in TS1 encoding.
-(textcomp)                Default family used instead.
-
-See the textcomp package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.21 ...fall nachspielt. Dieses Script ist unabhä
-                                                  ngig von der Dokumentation...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package textcomp Error: Symbol \textcurrency not provided by
-(textcomp)                font family futs in TS1 encoding.
-(textcomp)                Default family used instead.
-
-See the textcomp package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.21 ... werden nur in den automatisierten Testfä
-                                                  llen eingespielt.
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (8.5474pt too wide) in paragraph at lines 23--24
+Overfull \hbox (8.5474pt too wide) in paragraph at lines 22--23
 [][]\T1/futs/m/n/12 Object Ac-tion genauer beschreiben + Beschrei-bungssprache 
 und For-male Sprache
  []
 
+) ("G:\Uni\SVN Thesi\chapters/Grundlagen.tex" [2] [3]
+Chapter 2.
 
-! Package textcomp Error: Symbol \textcurrency not provided by
-(textcomp)                font family futs in TS1 encoding.
-(textcomp)                Default family used instead.
-
-See the textcomp package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.26 Die Übertragung der Testfä
-                                 lle in HP Quality Center funktioniert, ist ...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package textcomp Error: Symbol \textcurrency not provided by
-(textcomp)                font family futs in TS1 encoding.
-(textcomp)                Default family used instead.
-
-See the textcomp package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.26 ... Textfeld basierten Input aber Fehleranfä
-                                                  llig. Noch dazu ist der Au...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package textcomp Error: Symbol \textcurrency not provided by
-(textcomp)                font family futs in TS1 encoding.
-(textcomp)                Default family used instead.
-
-See the textcomp package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.26 ...ss diese bei der großen Anzahl an Testfä
-                                                  llen die Dokumentation Anp...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package textcomp Error: Symbol \textcurrency not provided by
-(textcomp)                font family futs in TS1 encoding.
-(textcomp)                Default family used instead.
-
-See the textcomp package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.28 1.1.	Schwer bis unmöglich manuelle Testfä
-                                                lle zu warten
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package textcomp Error: Symbol \textcurrency not provided by
-(textcomp)                font family futs in TS1 encoding.
-(textcomp)                Default family used instead.
-
-See the textcomp package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.30 ...Ändert sich die Maske, durch die regelmä
-                                                  ßigen Updates, wird diese...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package textcomp Error: Symbol \textcurrency not provided by
-(textcomp)                font family futs in TS1 encoding.
-(textcomp)                Default family used instead.
-
-See the textcomp package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.30 ...richtig zu Pflegen beinhaltet alle Testfä
-                                                  lle durchzugehen und wo au...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package textcomp Error: Symbol \textcurrency not provided by
-(textcomp)                font family futs in TS1 encoding.
-(textcomp)                Default family used instead.
-
-See the textcomp package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.30 ...estfälle durchzugehen und wo auf die geä
-                                                  nderte Oberfläche zugegri...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package textcomp Error: Symbol \textcurrency not provided by
-(textcomp)                font family futs in TS1 encoding.
-(textcomp)                Default family used instead.
-
-See the textcomp package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.30 ...zugehen und wo auf die geänderte Oberflä
-                                                  che zugegriffen wird demen...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package textcomp Error: Symbol \textcurrency not provided by
-(textcomp)                font family futs in TS1 encoding.
-(textcomp)                Default family used instead.
-
-See the textcomp package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.30 ...che zugegriffen wird dementsprechend zu ä
-                                                  ndern. Folglich sind diese...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package textcomp Error: Symbol \textcurrency not provided by
-(textcomp)                font family futs in TS1 encoding.
-(textcomp)                Default family used instead.
-
-See the textcomp package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.30 ...skalierbar und bereits bei wenigen Testfä
-                                                  llen ist mit Änderungen g...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-)
-Overfull \hbox (7.94199pt too wide) in paragraph at lines 25--75
-\T1/futs/m/n/12 Name angegeben. Bei der ��ber-tra-gung in das HP tool wird dies
- manuell eingepflegt.
+Overfull \hbox (17.89537pt too wide) in paragraph at lines 17--20
+[][]\T1/futs/m/n/12 TODO: -> Out-sourc-ing the-o-rie, zu-min-d-est a bissl 4) G
+rund-la-gen -> For-male Sprache,
  []
 
-("G:\Uni\SVN Thesi\thesis.bbl" [2]
+) ("G:\Uni\SVN Thesi\chapters/Herausforderungen.tex" [4
+
+]
+Chapter 3.
+
+Overfull \hbox (13.08592pt too wide) in paragraph at lines 7--8
+[]\T1/futs/m/n/12 Semaphore sind eine Her-aus-forderung da HPQC Zu-griff auf di
+e Daten mit semaphoren
+ []
+
+
+Overfull \hbox (1.53264pt too wide) in paragraph at lines 9--9
+[]\T1/futs/b/n/17.28 Zeigen von gro�en Daten-men-gen auf wenig Feldern 
+ []
+
+
+Overfull \hbox (6.55858pt too wide) in paragraph at lines 10--11
+[]\T1/futs/m/n/12 Die Auswahl von dem gew�n-schten El-e-ment wird schwierig wen
+n eine Liste tausende
+ []
+
+
+Overfull \hbox (22.75851pt too wide) in paragraph at lines 10--11
+\T1/futs/m/n/12 Lis-ten aufzuteie-len, die dy-namisch gener-iert wer-den, ab-h�
+ngig von der vorigen Auswahl. 
+ []
+
+) ("G:\Uni\SVN Thesi\chapters/Lösungen.tex"
+Overfull \hbox (3.28139pt too wide) in paragraph at lines 12--1
+[]\T1/futs/m/n/12 Der Work-flow in HPQC besteht aus gro�teil un-kom-men-tierten
+ 2000 LOC ohne Doku-
+ []
+
+[5
+
+] [6]
+Chapter 4.
+
+Overfull \hbox (0.90195pt too wide) in paragraph at lines 8--9
+\T1/futs/m/n/12 gung ins HPQC zu ver�n-dern. In un-seren Fall die Eingabe-maske
+. Ein-fache Textfelder
+ []
+
+) ("G:\Uni\SVN Thesi\chapters/Problemstellung.tex" [7
+
+] [8]
+Chapter 5.
+) ("G:\Uni\SVN Thesi\chapters/Implementation.tex"
+Overfull \hbox (9.68254pt too wide) in paragraph at lines 7--1
+\T1/futs/m/n/12 End-nutzer Zu-griff gegeben. Der gesamte Pfad zu einem Ob-jekt 
+hin muss �ber dieselbe
+ []
+
+[9
+
+]
+Chapter 6.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 12.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 13.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 13.
+ [10
+
+])
+("G:\Uni\SVN Thesi\chapters/Future.tex" [11]
+Chapter 7.
+) ("G:\Uni\SVN Thesi\chapters/Zusammenfassung-Fazit.tex" [12
+
+])
+("G:\Uni\SVN Thesi\chapters/literature.tex" [13
+
+]
+Chapter 8.
+) ("G:\Uni\SVN Thesi\thesis.bbl" [14
+
+]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [3
+) [15
 
 ] ("G:\Uni\SVN Thesi\thesis.aux") ) 
 Here is how much of TeX's memory you used:
- 4727 strings out of 493921
- 65127 string characters out of 3144879
- 148916 words of memory out of 3000000
- 7919 multiletter control sequences out of 15000+200000
- 50724 words of font info for 54 fonts, out of 3000000 for 9000
+ 5119 strings out of 493921
+ 69299 string characters out of 3144879
+ 176916 words of memory out of 3000000
+ 8279 multiletter control sequences out of 15000+200000
+ 67650 words of font info for 69 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 28i,5n,40p,657b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc
-/dvips/fontname/8r.enc} <C:\Users\JanR\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
-\jknappen\ec\dpi600\tcrm1200.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
-public/fourier/fourier-alt.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/a
-dobe/utopia/putb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/uto
-pia/putr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr
-8a.pfb>
-Output written on thesis.pdf (8 pages, 89967 bytes).
+ 31i,5n,40p,641b,1636s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\JanR\AppData\Local\MiKTeX\2.9\fon
+ts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk>{C:/Program Files (x86)/MiKTeX 2.9/
+fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
+public/fourier/fourier-ms.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/ad
+obe/utopia/putb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utop
+ia/putr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8
+a.pfb>
+Output written on thesis.pdf (21 pages, 136832 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
+ 207 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
