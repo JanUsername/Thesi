@@ -1,0 +1,267 @@
+'Traverses an Xml adds the lists to hpqc
+MsgBox "start"
+
+dim debuggingLevel 
+debuggingLevel = 1
+
+'for output in txtfiles, have to switch on debugging level at least 1
+dim testOutputFromXmlFile, pathTxtOutput
+'default path for the output txt file, can be changed if wanted
+pathTxtOutput = "C:\Temp\outputXML\"
+testOutputFromXmlFile = "Output.txt"
+
+'in front of all the list names in hp qc
+dim lhtListS
+lhtListS = "LHT_OR|"
+
+Call ReadXML()
+
+'start the whole process
+sub ReadXML()                
+                'connect to hpqc
+                Call ConnectToQualityCenter()
+                
+                'variables for addind lists 
+                Dim custom, OLists, tdConnection
+                Set tdConnection = ConnectToQualityCenter
+    Set custom = tdConnection.Customization
+    Set oLists = custom.Lists
+                
+                'create the xmlDoc object an tell it
+                dim xmlDoc, pathXML, filenameXML,  name, att_class,  nodeName, nodes, nameValue, classValue
+                
+                'create the object lists
+                dim objectList, objectLevel1, objectLevel2, objectList2
+                'first level of an object after (mostly browser or page)
+                set objectLevel1 = CreateObject("System.Collections.ArrayList")
+                'level 2 of object (mostly pages or frames)
+                set objectLevel2 = CreateObject("System.Collections.ArrayList")
+                'objects
+                set objectList = CreateObject("System.Collections.ArrayList")
+                'if an object has a subobject it get added here
+                set objectList2 = CreateObject("System.Collections.ArrayList")
+
+                'create the xml
+                Set xmlDoc = CreateObject("MSXML.DOMDocument")
+                pathXML = "C:\Temp\xmlFiles\"
+                filenameXML = "or_emax.tsr.xml"
+                xmlDoc.Async = "False"
+                xmlDoc.Load(pathXML + filenameXML)
+                'xmlDoc.setProperty "SelectionLanguage", "XPath"
+                Set objRoot = xmlDoc.documentElement
+                
+                'Find a particular element using XPath
+                dim rootList
+                set rootList = CreateObject("System.Collections.ArrayList")
+                rootList.add(filenameXML)
+                'tmp vars for getting the names of objects and levels
+                dim objectLevelName, objectLevel2Name, objectName, objectName2
+                'first iteration, getting the first level
+                for each child in xmlDoc.SelectNodes("/qtpRep:ObjectRepository/qtpRep:Objects/qtpRep:Object")
+                               objectLevelName = child.getAttribute("Name")
+                               objectLevel1.add(filenameXML & "|" & objectLevelName)
+                
+                               'first iteration, getting the second level
+                               For Each child2 In child.SelectNodes("./qtpRep:ChildObjects/qtpRep:Object")
+                                               objectLevel2Name = child2.getAttribute("Name")
+                                               objectLevel2.add(objectLevelName & "|" & objectLevel2Name )
+                                               
+                                                               'third iteration, getting the objects
+                                                               For Each child3 In child2.SelectNodes("./qtpRep:ChildObjects/qtpRep:Object")
+                                                                              objectName = child3.getAttribute("Name")
+                                                                              objectList.add(objectLevel2Name & "|" & objectName )
+                                                                              
+                                                                              'fourth iteration, getting the objects in case objects have objects
+                                                                              For Each child4 In child3.SelectNodes("./qtpRep:ChildObjects/qtpRep:Object")
+                                                                                              objectName2 = child4.getAttribute("Name")                                                                   
+                                                                                              objectList2.add(objectName & "|" & objectName2 )
+                                                                              next
+                                                               next                      
+                               next
+                next
+
+'wirte a txt with all the objects from the xml 
+if(debuggingLevel > 0) then
+                call outputAllItems(objectLevel1, "Object Level 1: ", "object level1.txt")
+                call outputAllItems(objectList, "Object : ", "objects.txt")
+End if
+                
+                Call AddList(tdConnection,rootList)
+                Call AddItemToList(tdConnection,rootList, objectLevel1) 
+                Call AddList(tdConnection,objectLevel1)
+                Call AddItemToList(tdConnection,objectLevel1, objectLevel2) 
+                Call AddList(tdConnection,objectLevel2)
+                MsgBox "addlist lvl 2 done"
+                Call AddItemToList(tdConnection,objectLevel2, objectList) 
+                MsgBox "additem to list lvl 2 done"
+                Call Disconnect(tdConnection)
+End Sub
+
+'-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+'===========================================Connect=================================================================================================================
+'-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+function ConnectToQualityCenter()
+
+'Connection variables
+Dim qcURL 
+Dim qcID 
+Dim qcPWD 
+Dim qcDomain 
+Dim qcProject 
+Dim tdConnection 
+
+                'setting connection variables
+   qcURL = "https://almlufthansa.saas.hp.com/qcbin" 
+   qcID = "jschmid"
+   qcPWD = "MyAlmPw4"
+   qcDomain = "SANDBOX"
+   qcProject = "MAX_4th_Version"
+    'qcPWD = InputBox("pw pls")
+
+' Create a Connection object to connect to Quality Center
+   Set tdConnection = CreateObject("TDApiOle80.TDConnection")
+'Initialise the Quality center connection
+   tdConnection.InitConnectionEx qcURL
+'Authenticating with username and password
+   tdConnection.Login qcID, qcPWD
+'connecting to the domain and project
+                tdConnection.Connect qcDomain, qcProject
+                
+                
+                set ConnectToQualityCenter = tdConnection
+'add the lists
+    'Call AddList(tdConnection)
+                'param nameList should be called with a sort of list
+                'Call AddItemToList(tdConnection,  "LHT_Test_Nr 1") 'adding a item to thelist, does not work if node is in queue and not commited
+'call the disconnect class
+                'Call Disconnect(tdConnection)
+End function
+
+'-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+'=============================================================Disconnect===========================================================================================
+'-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+'disconnects and release from the connection, if this class is not called i might lead to an error from windows side
+Sub Disconnect(tdConnection)
+'check if connected and logged in, if so disconnect and logout
+                If tdConnection.Connected Then
+                               tdConnection.Disconnect
+                End If
+                If tdConnection.LoggedIn Then
+        tdConnection.Logout
+    End If
+
+'release connection and set it to Nothing
+                tdConnection.ReleaseConnection
+                Set tdConnection = Nothing
+                MsgBox ("Connection closed succefully.")          
+End Sub
+
+'-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+'===========================================================Add List ============================================================================================
+'-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+' Add list under costumization -> Project Lists; 
+Sub AddList(tdConnection,listToAdd) 
+
+' custom is the connection with the elements, oList are the lists access
+   Dim custom
+    Set custom = tdConnection.Customization
+    Dim oLists
+    Set oLists = custom.Lists
+
+    'add list for each
+    for each item in listToAdd 
+                               oLists.RemoveList(lhtListS & item)
+                               oLists.AddList(lhtListS & item)
+                               'AddList RemoveList; Adding or removing List to the queue on the list object
+                next
+    custom.Commit
+End Sub
+
+'-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+'===========================================================Add Item to List ============================================================================================
+'-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sub AddItemToList(tdConnection, listToAdd, itemToAdd) 
+    Dim custom
+    Set custom = tdConnection.Customization
+    Dim oLists 
+    Set oLists  = custom.Lists
+                dim myList
+                dim pipePos, objectName, listName, objectList
+                
+                for each list in listToAdd
+                               listName = getRightSideOfPipe(list)
+                               
+                               for each item in itemToAdd 
+                                               objectList = getLeftSideOfPipe(item)
+
+                                               if(listName = objectList) Then
+                                                               if oLists.IsListExist(lhtListS & list) Then
+                                                                              Set myList  = oLists.List(CStr(lhtListS & list))'nameList
+                                                                              Set listRoot = myList.RootNode 
+                                                                              objectName = getRightSideOfPipe(item)
+                                                                              'MsgBox "before: " & objectName & " and the list: " & list
+                                                                              On Error Resume Next
+                                                                                              listRoot.AddChild(CStr(objectName))'subname              
+                                                                              On Error GoTo 0
+                                                                              'MsgBox "after: " & objectName & " and the list: " & list
+                                                               else 
+                                                                              MsgBox("The List: " + lhtListS & list + " does not exist or is not yet commited")
+                                                               End If
+                                               End If
+                               next
+                next
+                custom.Commit
+End Sub
+
+'-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+'===========================================================String Manipulation ====================================================================================
+'------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'get the name list from an object (part before the pipe)
+Function getLeftSideOfPipe(item)
+                               dim listNameFromObject
+                               listNameFromObject = Left(item, (getPipePos(item) - 1))
+                               getLeftSideOfPipe = listNameFromObject          
+End Function
+
+'get the name list from an object (part after the pipe)
+Function getRightSideOfPipe(item)
+                               dim objectNameFromObject
+                               objectNameFromObject = Mid(item,(getPipePos(item) + 1))
+                               getRightSideOfPipe = objectNameFromObject
+End Function
+
+'get the pipe position
+Function getPipePos(item)
+                dim pipePos
+                pipePos = InStr(item, "|")
+                getPipePos = pipePos
+End Function
+
+'-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+'===========================================================Debuggin output====================================================================================
+'------------------------------------------------------------------------------------------------------------------------------------------------------------------
+'output all the objects in an txt
+Sub outputAllItems(list, textBeforeListInTxt, txtName)
+                dim outFile, objFile
+               Set objFSO=CreateObject("Scripting.FileSystemObject")
+                
+                outFile = pathTxtOutput & txtName
+                Set objFile = objFSO.CreateTextFile(outFile,True)
+
+                objFile.Write vbCrLf & textBeforeListInTxt & vbCrLf
+                for each node in list
+                               objFile.Write node & vbCrLf
+                               'if(debugginLevel > 1) Then
+                               '               objFile.Write "only the list: " & getLeftSideOfPipe(node) & vbCrLf
+                               '               objFile.Write "only the name: " & getRightSideOfPipe(node)& vbCrLf
+                               'End if
+                Next
+                objFile.Close
+End Sub

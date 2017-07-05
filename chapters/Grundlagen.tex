@@ -1,22 +1,95 @@
 \chapter{Grundlagen und Stand der Technik}
 \section{Hp Tool}
-Wenn du ein „HP Tool“ erwähnst, musst du dieses Tool kurz erklären. Das würde in „Grundlagen und Stand der Technik“ gut hineinpassen.
-Das HP Tool Application Life Cycle Manager oder kurz HP ALM ist eine Sammlung von Software Applikationen die den Lebenszyklus von Software unterstützt.
- In diesen Fall die Erstellung von automatisierten Testfällen. HP. 
+Das HP Tool Application Life Cycle Manager, oder kurz HP ALM, ist eine Sammlung
+von Software Applikationen die den Lebenszyklus einer Software unterstützt.
+ In diesen Fall die Erstellung von automatisierten Testfällen.  
  Spezifisch wird hier HP Quality Center verwendet das eine einzige Plattform für
- Test- und Software Zyklus Management bereitstellt. Die Aufgabe der Software
- Factory ist nicht die genutze Software nachzubasteln sondern eigentständige
+ Test- und Software Zyklus Management bereitstellt. Aufgabe der Software
+ Factory ist nicht die genutze Software nach zu bauen sondern eigentständige
  Programme schreiben die auf einer existierend Testumgebung die gewünschten
- Abläufe rekonstruiert. 
+ Abläufe rekonstruieren. 
 
+\section{Daten}
+Eine Sammlung von allen Objekten die bei der Automatisierung angesprochen worden
+sind gibt es in Form von XML-Dateien.  Diese liegen extern und nicht im HP-QC
+selbst. Da sie von der Testfactory angefertigt worden sind, eignen sie sich
+optimal da selbige beim Automatisieren verwendet und somit 
+Konflikte mit der Namensgebung der Elemente vermieden werden.
 
+ Da reine XML nicht in dieser Form eingespeichert und verwendet werden können
+ müssen diese erst geparst werden. Am besten eigenen sich hier ``Project List''
+die von HP bereitgestellt werden. Diese können auch mit externen Scirpten
+erstellt,gelöscht oder bearbeitet werden. Intern sind diese einfach aufrufbar
+und somit ideal geeignet um das Eingabefenster je nach Aufruf dynamisch zu
+verändern.
+\begin{figure}[h]
+\includegraphics[width=\textwidth]{\string"img/project lists".png}
+\caption{ In diesem Bild sehen wir ein Beispiel von HP eigenen Listen. Diese
+können vom Workflow aus zugegriffen werden und von extern bearbeitet oder
+erstellt werden.}
+\end{figure}
 
- 
- 
- 
- TODO:
- -> Outsourcing theorie, zumindest a bissl
-  4) Grundlagen -> Formale Sprache, Object Path ersatz, find that document->gefindet
+Der Workflow reguliert den Ablauf der Übertragung der Testfälle ins HPQC. Mit
+diesen kann man Felder an Bedingungen knüpfen, lehr lassen, ausgrauen,
+autovervollständigen etc. 
 
-  [insert source and more explanation about hp here + Cycles?]
-\section{UFT}
+\section{HP ALM XML}
+\begin{lstlisting}
+<qtpRep:ObjectRepository xmlns:qtpRep="http://www.mercury.com/qtp/ObjectRepository">
+<qtpRep:Objects>
+<qtpRep:Object Class="Link" Name="matRequest_info_second_IBO_Materialstamm_Tab">
+<qtpRep:ChildObjects>
+<qtpRep:Object Class="WinButton" Name="matRequest_info_NotificationBar_FileSave_OpenButton">
+\end{lstlisting}
+
+Im oberen Beispiel können wir die Grundstruktur der XML Dateien erkennen. In der
+ersten Zeile wird die Repository URL angegeben. Für unsere Listen benötigen wir
+den Unterpunkt ``qtpRep:Objects''. In diesem werden alle Objekte,  von Buttons
+über Explorer eingeordnet. Die sind unter ``qtpRep:Object'' zu erkennen.
+
+ Die wichtigsten Elemente die wir aus der XML auslesen können sind die
+ Attribute Class und Name. Das Attribut Class gibt mit welche Art von Objekt wir es hier zu
+tun haben. Im Code-Beispiel ist es einmal ein Link und darunter ein
+Button.
+Das nächste ist für uns das wichtigste Element, der Namen mit der ein
+Objekte eindeutig gekennzeichnet wird. Am Ende von diesen steht auch eine Art
+Klasse in der genau spezifiziert wird was dies darstellt.
+
+Anklickbaren Elemente wie Textboxen etc. werden alle erst untergeordnet in
+Explorer, Applikation etc.  unter Childobjects. Ein größerer Panel besteht
+immer aus mehreren kleinenren Interaktiven Elementen. Diese können selbst Unterelemente haben.  Mit der
+Klasse, Namen und dem Pfad werden sie eindeutig verifiziert und zugeordnet.
+werden.
+
+\section{Methodisches Vorgehen}
+Für dieses Projekt benutzen wir die für diese Art von Aufgabe untypische
+Programmiersprache Visual Basic Script. Aus dem einfachen Grund, dass man mit
+dieser einfach auf den Lifecycle Manager zugreifen kann. Auch C(sharp)
+bietet diese Möglichkeit ist aber im Funktionsumfang und Ausgereiftheit deutlich
+ VBS unterlegen. Auch sind VBS Scripte im HP Alm einfacher einzubinden. 
+
+Noch dazu bietet HP ALM eine einfache Schnittstelle für VBS um mit dem Programm
+auch von extern kommunizieren zu können, die Open Test Arcitecture. Der Vorteil
+von extern auf die Software zuzugreifen liegt auf dementsprechend externe
+Dokumente leichter Zugriff zu haben. In unseren Fall XML-Files. Diese Prozedur
+wird unter Implementation genauer erklärt.
+
+Ein weitere Vorteil die Scripte nicht direkt in den Hauseigennen ``Worflow''
+einzubinden ist das dieser schon mehrere Tausend Zeilen schwer ist. Dies würde
+die Übersicht des bereits bestehenden Code verringen.
+
+Bevor wir mit der Implementation beschäftigen, müssen wir und vorerst die
+Einschränkungen unseres Programmes kennen. Unter diesen versteht man
+hier die maximale Azahl an Elemente die das Programm erfassen kann, ebenso
+die in einer einzigen Iteration uploaden kann oder ob die Ladezeiten dabei
+nicht zu groß werden. Auch dürfen diese später nicht die Performance für User
+beinträchtigen.
+
+Die Listen die eingetragen werden müssen werden auf unter >10.000 geschätzt. Die
+Tests mit HP ALM zeigen keine negativen Auswirkungen auf HP ALM auch über
+100.000 Elementen. Auch die Einspielzeit, sofern es in wenigen Iteration
+geschieht, bleiben immer unter 15 Minuten. Um bei Listen Elemente hinzuzufügen,
+wie ein Button etc. muss diese aber bereits im HP QC commited sein, nicht nur
+hinzugefügt. Da aber Listen einzeln commiten mehrere Stunden dauern würde muss
+man die einzelnen Elemente später hinzufügen.
+

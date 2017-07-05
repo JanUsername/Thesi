@@ -2,11 +2,23 @@
 
 \section{Zukünftiger Einsatz und Ausbau}
 \section{Allen Testfällen}
-Wird bei allen dokumentierten Testfällen benützt.
-[Anstatt dokumentierte Testfälle -> Dokumentation „Synonyme“ -> Standardisieren, einheitliche Beschreibung der Testfälle, Formalisieren-> sollen alle gleich Aussehen]
+Im Moment können nicht alle Testfälle standartisiert werden da ältere XML
+Dateien andere Formate bzw. der Standard sich erst mit der Zeit so wie
+er ist entwickelt hat. Diese müssen erst angepasst werden um ältere
+bereits eingespielte Tests später leichter zu warten sind. 
+[Anstatt
+dokumentierte Testfälle -> Dokumentation „Synonyme“ -> Standardisieren, einheitliche Beschreibung der Testfälle, Formalisieren-> sollen alle gleich Aussehen]
+
 \section{ Manuelle Eingabe aus der End-User Maske}
--future
-Das Obeject Repository kann nicht nur über das Costumization Interface oder Scripten geändert werden sondern auch über eine End-User Maske.
+Zukünftige Veränderung an der Graphischen Oberfläche wir nicht automatisch bei
+der Testautomatisierung mitverändert. Bei dem Übertragen eines Testfalles wird
+anstelle des Pfades ein Feld Sonstiges ausgefüllt, das später von der
+Testfactory eingespielt wird. Eine möglich Feature besteht darin End-user direkt
+über die Eingabemaske die Dateien im Hintergrund zu verändern. Trotzdem wird
+eine Rückbestätigung der Testautomatiser sicherer sein.
+
 \section{Direkt Automatisiert}
--future
-Da alle Objekte bereits als Elemente vorhanden sind gibt es die Möglichkeit dies später zu benützten um zum Teil direkt schon zu automatisieren.
+Im HP ALM sind jetzt Listen aller Möglichen Objekte und den Customisierbaren
+Listen gepseichert, vorher waren diese nur extern über XML zugänglich. Die
+bietet einen möglich Ausbau für die Testautomation um diese teil oder volls vom
+HPQC übernehmen zu lassen.

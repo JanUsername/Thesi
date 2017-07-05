@@ -7,30 +7,131 @@ Script C(sharp) bevorzugt da diese Sprache für HPQC am geeignetsten ist. VBS ist
 gut dokumentiert und verfügt über eine viel größere Bibliothek was die Steuerung des
 Tools anbelangt. Der Workflow von HPQC ist auch mit VBS beschrieben, was eine
 Andockung mit der selbigen vereinfacht. C(sharp) scheint zu diesen Zeitpunkt
-noch nicht für die Software ausgearbeitet genug zu sein. Das kann sich in Zukunft vielleicht ändern.
+noch nicht für die Software ausgearbeitet genug zu sein. 
+
+Creating a connection
+\lstset{language=VBScript}
+
+\begin{lstlisting}
+' Create a Connection object to connect to Quality Center
+   Set tdConnection = CreateObject("TDApiOle80.TDConnection")
+'Initialise the Quality center connection
+   tdConnection.InitConnectionEx qcURL
+'Authenticating with username and password
+   tdConnection.Login qcID, qcPWD
+'connecting to the domain and project
+	tdConnection.Connect qcDomain, qcProject
+\end{lstlisting}
+
+Über dieses tdConnection Objekt können wir Objekte für HP ALM erstellen,
+löschen oder verändern. In unseren Fall sind das selbstgebaute Listen.
+
 \section{ Listen adden + Elemente}
 \begin{lstlisting}
-' Add list under costumization -> Project Lists;
-Sub AddList(tdConnection)
-MsgBox("adding lists like a champ")
 ' custom is the connection with the elements, oList are the lists access
-Dim custom
-Set custom = tdConnection.Customization
-Dim oLists
-Set oLists = custom.Lists
-Dim nameList
-Dim counter
-counter = 0
-While counter < 10
-nameList = "LHT_Test_Nr " & counter
-oLists.AddList (nameList)
-'AddList RemoveList; Adding or removing List to the queue on the list object
-Call AddItemToList(tdConnection, nameList) ‘'adding an item to thelist, does not work if node is in queue and not commisted
-counter = counter + 1
-Wend
-custom.Commit
+   Dim custom
+    Set custom = tdConnection.Customization
+    Dim oLists
+    Set oLists = custom.Lists
+
+    'add list for each
+    for each item in listToAdd 
+                               oLists.RemoveList(lhtListS & item)
+                               oLists.AddList(lhtListS & item)
+                               'AddList RemoveList; Adding or removing List to the queue on the list object
+                next
+    custom.Commit
 End Sub
-[Code beschreiben]
 \end{lstlisting}
+
+
+In diesen Beispiel kann man erkennen das die Listen bevor sie geuploadet
+werd erst gelöscht werden. Was erst Gegenintuitive erscheinen mag wird so
+gehandhabt weil Listen die es bereits gibt einfach übersprungen werden. Das hat
+zur Folge, falls eine Liste nuie Elemente hinzugefügt bekommt, würde diese nicht
+aktualisiert werden. Praktisch hier kommt das HP-Alm beim Löschen von Listen den
+Befehl einfach überspringt falls die Liste nicht vorhanden ist. So kommt es zu
+keinen Problemen.
+
 \section{Aus XML auslesen}
+\begin{lstlisting}
+for each child in xmlDoc.SelectNodes("/qtpRep:ObjectRepository/qtpRep:Objects/qtpRep:Object")
+  objectLevelName = child.getAttribute("Name")
+  objectLevel1.add(filenameXML & "|" & objectLevelName)
+  
+  'first iteration, getting the second level
+  For Each child2 In child.SelectNodes("./qtpRep:ChildObjects/qtpRep:Object")
+    objectLevel2Name = child2.getAttribute("Name")
+    objectLevel2.add(objectLevelName & "|" & objectLevel2Name )
+    
+    'third iteration, getting the objects
+      For Each child3 In
+      child2.SelectNodes("./qtpRep:ChildObjects/qtpRep:Object") objectName =
+      child3.getAttribute("Name") objectList.add(objectLevel2Name & "|" & objectName )
+      
+      'fourth iteration, getting the objects in case objects have objects
+        For Each child4 In
+          child3.SelectNodes("./qtpRep:ChildObjects/qtpRep:Object") objectName2
+         = child4.getAttribute("Name") objectList2.add(objectName & "|" & objectName2 ) 
+       next
+     next
+   next
+next
+\end{lstlisting}
+
+Das Herzstück dieses Projektes, das Durchlaufen der XML. Der erste Schritt ist
+das auslesen aller Knotenpunkte mit dem Befehl Select Nodes. Dieser beinhaltet
+zuert allte Objekte in einer einzigen Dimension. Wir können jetzt den ersten
+Punkt in die Liste als root Listenname setzen. Dieses Rootelement besteht aus
+dem Dateinamen und dem Attributname. Hier gilt zu beachten das maximal 4
+Tiefen existieren wobei nur 3 üblich sind und die letze ein Ausnahmefall ist.
+Dieser kann bei einer Combobox mit vorgefertigten Elementen vorkommen.
+
+In diesen Fall haben wir eine rekursive linked List erstellt ohne abstrakte
+Datentypen, sondern nur über den Namen, da VBS diese nicht native unterstützt. 
+An der linken Seite der Pipe sehen wir wo wir gerade sind, auf der rechten das
+gewünschte Objekt. Der Listenname gibt an an welchen Panel/Browser wir uns
+gerade befinden. 
+Diese Manipulation ist nötig da beim einlesen die Level der XML verloren gehen
+und alles Eindimensional dargestellt wird und wir nur Knotenpunkt für
+Knotenpunkt linear verarbeiten können. 
+
+Die Variante wurde einem rekursiven Aufruf bevorzugt da die Schreibweise
+intuitiver erscheint und damit leichter zu warten ist. 
+
+\section{Listnamen Manipulation}
+\begin{lstlisting}
+for each list in listToAdd
+listName = getRightSideOfPipe(list)
+for each item in itemToAdd 
+  objectList = getLeftSideOfPipe(item)
+  if(listName = objectList) Then
+    if oLists.IsListExist(lhtListS & list) Then
+    Set myList  = oLists.List(CStr(lhtListS & list))'nameList
+    Set listRoot = myList.RootNode 
+    objectName = getRightSideOfPipe(item)
+    On Error Resume Next
+      listRoot.AddChild(CStr(objectName))'subname
+    On Error GoTo 0
+   
+    else 
+      MsgBox("The List: " + lhtListS & list + " does not exist or is not yet commited") End If
+    End If
+    next
+  next
+custom.Commit
+\end{lstlisting}
+
+Der Namen ist mit einer Pipe ``|'' getrennt. Auf der rechten Seite zeigt dieser
+an welches Objekt gerade im Focus steht. Im Gegensatz auf der linken Seite steht
+das Objektlevel, also im welchen Panel, Browser etc das Object platziert ist.
+Dieser funktioniert auch als Listenname. Sobald der Listenname nicht mehr mit
+dem Objectlevel übereinstimmt, kreieren wir eine neue Liste.
+
+Der Commit ist der Teil des Programms der am längstem braucht, viele Commits
+würden viel Zeit beanspruchen, deshalb wird dieser erst ausgeführt sobald wir
+alle Ebenen und Objekte im Zwischenbuffer oList abgelegt haben.
+
+ *instert graphic with name description
+
 \section{Ergebnis}

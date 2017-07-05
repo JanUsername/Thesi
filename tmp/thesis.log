@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.16)  16 MAR 2017 14:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.16)  5 JUL 2017 07:00
 entering extended mode
 **thesis.tex
 ("G:\Uni\SVN Thesi\thesis.tex"
@@ -487,7 +487,7 @@ Package pdftex.def Info: img/logo.pdf used on input line 55.
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <G:/Uni/SVN Thesi/img/logo
 .pdf>]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 60.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 61.
 
 ("G:\Uni\SVN Thesi\thesis.toc"
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
@@ -515,88 +515,100 @@ Chapter 1.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 3.
 
-Overfull \hbox (0.2385pt too wide) in paragraph at lines 4--8
-\T1/futs/m/n/12 dieses verbessert sich die Wart-barkeit der doku-men-tierten Te
-st-fälle. Ständige Verän-
+Overfull \hbox (0.16641pt too wide) in paragraph at lines 4--14
+\T1/futs/m/n/12 ier wird aber durch die Er-weiterung verbessert. Die Wart-barke
+it der doku-men-tierten
  []
 
 
-Overfull \hbox (16.20328pt too wide) in paragraph at lines 9--12
+Overfull \hbox (16.20328pt too wide) in paragraph at lines 15--31
 [][]\T1/futs/m/n/12 Supply Chain Lufthansa Lufthansa ist mit fast 126.000 Mi-ta
 r-beit-ern eine der gröÿten
- []
-
-
-Overfull \hbox (0.71858pt too wide) in paragraph at lines 9--12
-\T1/futs/m/n/12 Tech-nik, Cater-ing, IT- Di-en-stleis-tun-gen und Ser-vice und
- Fi-nanzge-sellschaft. Dieses
- []
-
-
-Overfull \hbox (0.80257pt too wide) in paragraph at lines 13--19
-\T1/futs/m/n/12 Test-fälle hinge-gen dauern Tage und bedür-fen Men-schen die si
-e durchk-licken. Durch
- []
-
-
-Overfull \hbox (20.76662pt too wide) in paragraph at lines 13--19
-\T1/futs/m/n/12 sein kann, son-dern wird nur noch benötigt falls die Tests nich
-t er-fol-gre-ich abgeschlossen
  []
 
 [1
 
 
-]
-Overfull \hbox (8.5474pt too wide) in paragraph at lines 22--23
+] <"img/design steps".jpg, id=84, 791.95876pt x 286.06876pt>
+File: "img/design steps".jpg Graphic file (type jpg)
+
+<use "img/design steps".jpg>
+Package pdftex.def Info: "img/design steps".jpg used on input line 54.
+(pdftex.def)             Requested size: 412.56496pt x 149.02724pt.
+ [2 <G:/Uni/SVN Thesi/img/design steps.jpg>]
+Overfull \hbox (8.5474pt too wide) in paragraph at lines 76--77
 [][]\T1/futs/m/n/12 Object Ac-tion genauer beschreiben + Beschrei-bungssprache 
 und For-male Sprache
  []
 
-) ("G:\Uni\SVN Thesi\chapters/Grundlagen.tex" [2] [3]
+) ("G:\Uni\SVN Thesi\chapters/Grundlagen.tex" [3]
 Chapter 2.
+<"img/project lists".png, id=91, 427.5975pt x 332.74312pt>
+File: "img/project lists".png Graphic file (type png)
 
-Overfull \hbox (17.89537pt too wide) in paragraph at lines 17--20
-[][]\T1/futs/m/n/12 TODO: -> Out-sourc-ing the-o-rie, zu-min-d-est a bissl 4) G
-rund-la-gen -> For-male Sprache,
+<use "img/project lists".png>
+Package pdftex.def Info: "img/project lists".png used on input line 26.
+(pdftex.def)             Requested size: 412.56496pt x 321.04431pt.
+
+Overfull \hbox (1.8345pt too wide) in paragraph at lines 19--31
+\T1/futs/m/n/12 stellt,gelöscht oder bear-beitet wer-den. In-tern sind diese ei
+n-fach aufruf-bar und somit
  []
 
-) ("G:\Uni\SVN Thesi\chapters/Herausforderungen.tex" [4
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4
 
 ]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 37.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 38.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 38.
+ [5 <G:/Uni/SVN Thesi/img/project lists.png>]
+Overfull \hbox (27.91049pt too wide) in paragraph at lines 65--70
+\T1/futs/m/n/12 ein-fach auf den Life-cy-cle Man-ager zu-greifen kann. Auch C(s
+harp) bi-etet diese Möglichkeit
+ []
+
+
+Overfull \hbox (3.26738pt too wide) in paragraph at lines 77--80
+[][]\T1/futs/m/n/12 Ein weit-ere Vorteil die Scripte nicht di-rekt in den Hau-s
+eigen-nen ``Wor-flow'' einzu-
+ []
+
+) ("G:\Uni\SVN Thesi\chapters/Herausforderungen.tex" [6]
 Chapter 3.
 
-Overfull \hbox (13.08592pt too wide) in paragraph at lines 7--8
+Overfull \hbox (13.08592pt too wide) in paragraph at lines 13--14
 []\T1/futs/m/n/12 Semaphore sind eine Her-aus-forderung da HPQC Zu-griff auf di
 e Daten mit semaphoren
  []
 
 
-Overfull \hbox (1.53264pt too wide) in paragraph at lines 9--9
+Overfull \hbox (1.53264pt too wide) in paragraph at lines 16--16
 []\T1/futs/b/n/17.28 Zeigen von groÿen Daten-men-gen auf wenig Feldern 
  []
 
 
-Overfull \hbox (6.55858pt too wide) in paragraph at lines 10--11
+Overfull \hbox (6.55858pt too wide) in paragraph at lines 17--18
 []\T1/futs/m/n/12 Die Auswahl von dem gewün-schten El-e-ment wird schwierig wen
 n eine Liste tausende
  []
 
 
-Overfull \hbox (22.75851pt too wide) in paragraph at lines 10--11
+Overfull \hbox (22.75851pt too wide) in paragraph at lines 17--18
 \T1/futs/m/n/12 Lis-ten aufzuteie-len, die dy-namisch gener-iert wer-den, ab-hä
 ngig von der vorigen Auswahl. 
  []
 
-) ("G:\Uni\SVN Thesi\chapters/LÃ¶sungen.tex"
-Overfull \hbox (3.28139pt too wide) in paragraph at lines 12--1
-[]\T1/futs/m/n/12 Der Work-flow in HPQC besteht aus groÿteil un-kom-men-tierten
- 2000 LOC ohne Doku-
- []
+) ("G:\Uni\SVN Thesi\chapters/LÃ¶sungen.tex" [7
 
-[5
-
-] [6]
+] [8]
 Chapter 4.
 
 Overfull \hbox (0.90195pt too wide) in paragraph at lines 8--9
@@ -604,57 +616,66 @@ Overfull \hbox (0.90195pt too wide) in paragraph at lines 8--9
 . Ein-fache Textfelder
  []
 
-) ("G:\Uni\SVN Thesi\chapters/Problemstellung.tex" [7
+) ("G:\Uni\SVN Thesi\chapters/Problemstellung.tex" [9
 
-] [8]
+] [10]
 Chapter 5.
 ) ("G:\Uni\SVN Thesi\chapters/Implementation.tex"
-Overfull \hbox (9.68254pt too wide) in paragraph at lines 7--1
+Overfull \hbox (9.68254pt too wide) in paragraph at lines 14--1
 \T1/futs/m/n/12 End-nutzer Zu-griff gegeben. Der gesamte Pfad zu einem Ob-jekt 
 hin muss über dieselbe
  []
 
-[9
+[11
 
 ]
 Chapter 6.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 12.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
-File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 13.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 13.
- [10
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang2.sty"
+File: lstlang2.sty 2015/06/04 1.6 listings language file
+) [12
 
-])
-("G:\Uni\SVN Thesi\chapters/Future.tex" [11]
+]
+[13]
+Overfull \hbox (6.56255pt too wide) in paragraph at lines 82--89
+\T1/futs/m/n/12 in die Liste als root Lis-ten-name set-zen. Dieses Rootele-ment
+ besteht aus dem Dateina-
+ []
+
+[14]) ("G:\Uni\SVN Thesi\chapters/Future.tex" [15]
 Chapter 7.
-) ("G:\Uni\SVN Thesi\chapters/Zusammenfassung-Fazit.tex" [12
+
+Overfull \hbox (4.9746pt too wide) in paragraph at lines 13--19
+\T1/futs/m/n/12 anstelle des Pfades ein Feld Son-stiges aus-ge-füllt, das späte
+r von der Test-fac-tory einge-
+ []
+
+) ("G:\Uni\SVN Thesi\chapters/Zusammenfassung-Fazit.tex" [16
 
 ])
-("G:\Uni\SVN Thesi\chapters/literature.tex" [13
+("G:\Uni\SVN Thesi\chapters/literature.tex" [17
 
 ]
 Chapter 8.
-) ("G:\Uni\SVN Thesi\thesis.bbl" [14
+) ("G:\Uni\SVN Thesi\thesis.bbl" [18
 
 ]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [15
+) [19
 
 ] ("G:\Uni\SVN Thesi\thesis.aux") ) 
 Here is how much of TeX's memory you used:
- 5119 strings out of 493921
- 69299 string characters out of 3144879
- 176916 words of memory out of 3000000
- 8279 multiletter control sequences out of 15000+200000
+ 5473 strings out of 493921
+ 74359 string characters out of 3144879
+ 211916 words of memory out of 3000000
+ 8624 multiletter control sequences out of 15000+200000
  67650 words of font info for 69 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 31i,5n,40p,641b,1636s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,6n,40p,557b,1600s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\JanR\AppData\Local\MiKTeX\2.9\fon
 ts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk>{C:/Program Files (x86)/MiKTeX 2.9/
 fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
@@ -662,9 +683,9 @@ public/fourier/fourier-ms.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/ad
 obe/utopia/putb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utop
 ia/putr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8
 a.pfb>
-Output written on thesis.pdf (21 pages, 136832 bytes).
+Output written on thesis.pdf (25 pages, 308800 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
+ 231 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
