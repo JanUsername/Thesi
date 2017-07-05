@@ -10,10 +10,52 @@ regelmäßig aktualiesert worden sind und sie trotzdem bei Problemen resetiert
 worden konnte.
 
 \section{Semaphore / Visual Basic}
-Semaphore sind eine Herausforderung da HPQC Zugriff auf die Daten mit semaphoren kann sperren und es an Lösungen gedacht werden muss die immer funktionieren.
-\section{XML Parsing}
+Visual Basic ist konzeptiert als Script Sprache die Aufgaben automatisiert
+ausführen kann, oder für Zeitersparnis sorgen kann. Sie ist von HP ausgewählt
+worden um als Schnittstelle für die Life Cycle Applikation zu fungieren bzw. sie
+auf Wunsch maßzuschneidern. Dafür bietet Hp eine Reihe von Bibliotheken mit
+Zugang auf allen möglichichen Bereichen, sei es von extern über Scripts, sei es
+es intern übern den Hauseigenen Workflow.
+
+Mit dies erweist sich VBS als eindeutig geigneste Wahl für dieses Projekt. Nun
+hat eine Scritpsprache gegenüber anderen Programmiersprachen wie Java einige
+Nachteile. Einmal ist der einzige Datentyp Variant, dieser kann zu Problemen
+führen wenn sich HPQC bestimmte Datentypen erwartet aber VBS sie nicht richtig
+interpretiert. Dies muss dann richtig konvertiert werden oder es kann zu Fehlern
+kommen. 
+
+Ein weiterer möglicher Konfliktpunkt könnte der Mangel an Abstrakten Datentypen
+sein. Da wir mit größeren Mengen an Daten mit vielen einzelnen und untereinander
+verknüpften Elementen zu arbeiten haben wären diese eine natürliche Wahl. Hier
+müssen wir Alternativen suchen die z.B. mit String manipultation funktioniert.
+
+\section{XML}
+Eine weitere Herausforderung bringen die XML Dateien. Mit VBS verlieren wir
+die ``Tiefe'' der Elemente. Da einmal eingelesen VBS alles Zeile für Zeile
+behandelt und keinen unterschied macht ob untereinander Zeilen verschachtelt
+sind. Sie macht die XML Datei eindimensional. Hier wären ADT nützlich beim
+einlesen. Gelöst wurde es mit der Namen der Listen bzw. der Elemente auf denen
+die vorhergehende Ebene verweist.
+
+Des wurde das Format wie es jetzt standartisiert ist erst im Laufe der Zeit
+entwickelt und ältere XML Dateien sind grundsätzlich sehr verschieden aufgebaut.
+Um dies entgegen zu wirken müssen diese auf dem neusten Stand gebracht werden.
 
 \section{Zeigen von großen Datenmengen auf wenig Feldern}
-Die Auswahl von dem gewünschten Element wird schwierig wenn eine Liste tausende Elemente enthält. Eine Möglichkeit dies zu vereinfachen ist die Liste auf mehreren Listen aufzuteielen, die dynamisch generiert werden, abhängig von der vorigen Auswahl.
+Schwierigkeiten kann auch eine verständlich Darstellung der eingespielten Daten
+bringen. Diese gehen in die Tausende Die Auswahlmöglichkeiten sind auf
+Eingabefelder und Comboboxen beschränkt. So kann es schnell passieren das einem
+die Übersicht verloren geht und die geplante vereinfachte Eingabe das Gegenteil
+erreicht. Eine Möglichkeit ist mehrere Comboboxen, an Stelle wie vorher einem
+Textfeld, die sich nach unten skalieren und die Auswahl mit einent Top-down
+approach vergleichbar ist. Es wird von der Applikation über Panel zu einzelnen
+Objekten immer die nächste Ebene über ausgegraut und mit der vorhergehenden
+Auswahl schränkt sich die Auswahl genug ein um übersichtlich zu bleiben. Die
+nächsten Auswahlmöglichkeiten werden dynamisch generiert im Workflow.
+
 \section{Workflow in HPQC}
-Der Workflow in HPQC besteht aus großteil unkommentierten LOC , alles auf nur eine Seite. Dies kann dazu führen das leicht die Übersicht verloren geht und Fehler passieren.
+Über den Workflow in HPQC lassen sich Elemente ansteuern und verändern. Dieser
+ist mit der Zeit gewachsen, da das Programm auf eigene Wünsche maßgeschneidert
+worden ist. So bestand das Risiko den noch weiter aufzublasen was Wartung und
+Entwicklung erschweren könnten. Deshalb wurde beschlossen Soviel wie möglich mit
+externen Scripten zu machen.
