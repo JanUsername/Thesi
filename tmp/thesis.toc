@@ -15,23 +15,23 @@
 \contentsline {section}{\numberline {3.3}XML}{10}
 \contentsline {section}{\numberline {3.4}Zeigen von gro\IeC {\ss }en Datenmengen auf wenig Feldern}{10}
 \contentsline {section}{\numberline {3.5}Workflow in HPQC}{10}
-\contentsline {chapter}{\numberline {4}L\"osungen}{11}
-\contentsline {section}{\numberline {4.1}Object Repository}{11}
-\contentsline {section}{\numberline {4.2}UTF XML}{11}
-\contentsline {section}{\numberline {4.3}Workflow}{11}
-\contentsline {section}{\numberline {4.4}Binary Repr\"asentation}{12}
-\contentsline {chapter}{\numberline {5}Problemstelliung}{13}
-\contentsline {section}{\numberline {5.1}Problemstellung}{13}
-\contentsline {section}{\numberline {5.2}Warum HP Quality Center}{13}
-\contentsline {section}{\numberline {5.3}Requierments}{13}
-\contentsline {chapter}{\numberline {6}Implementation}{14}
-\contentsline {section}{\numberline {6.1}OTA / tdconnect, Visual Basic Script}{14}
-\contentsline {section}{\numberline {6.2} Listen adden + Elemente}{14}
-\contentsline {section}{\numberline {6.3}Aus XML auslesen}{15}
-\contentsline {section}{\numberline {6.4}Listnamen Manipulation}{16}
-\contentsline {section}{\numberline {6.5}Ergebnis}{17}
-\contentsline {chapter}{\numberline {7}N\"achste Schritte}{18}
-\contentsline {section}{\numberline {7.1}Zuk\"unftiger Einsatz und Ausbau}{18}
-\contentsline {section}{\numberline {7.2}Allen Testf\"allen}{18}
-\contentsline {section}{\numberline {7.3} Manuelle Eingabe aus der End-User Maske}{18}
-\contentsline {section}{\numberline {7.4}Direkt Automatisiert}{18}
+\contentsline {chapter}{\numberline {4}Problemstelliung}{12}
+\contentsline {section}{\numberline {4.1}Warum HP Quality Center}{12}
+\contentsline {section}{\numberline {4.2}Aufgabenstellung}{12}
+\contentsline {section}{\numberline {4.3}Requierments}{12}
+\contentsline {chapter}{\numberline {5}L\"osungen}{14}
+\contentsline {section}{\numberline {5.1}Object Repository}{14}
+\contentsline {section}{\numberline {5.2}UTF XML}{14}
+\contentsline {section}{\numberline {5.3}Workflow}{14}
+\contentsline {section}{\numberline {5.4}Binary Repr\"asentation}{15}
+\contentsline {chapter}{\numberline {6}Implementation}{16}
+\contentsline {section}{\numberline {6.1}OTA / tdconnect, Visual Basic Script}{16}
+\contentsline {section}{\numberline {6.2} Listen adden + Elemente}{16}
+\contentsline {section}{\numberline {6.3}Aus XML auslesen}{17}
+\contentsline {section}{\numberline {6.4}Listnamen Manipulation}{18}
+\contentsline {section}{\numberline {6.5}Ergebnis}{19}
+\contentsline {chapter}{\numberline {7}N\"achste Schritte}{20}
+\contentsline {section}{\numberline {7.1}Zuk\"unftiger Einsatz und Ausbau}{20}
+\contentsline {section}{\numberline {7.2}Allen Testf\"allen}{20}
+\contentsline {section}{\numberline {7.3} Manuelle Eingabe aus der End-User Maske}{20}
+\contentsline {section}{\numberline {7.4}Direkt Automatisiert}{20}
