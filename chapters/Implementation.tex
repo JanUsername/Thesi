@@ -12,7 +12,7 @@ noch nicht für die Software ausgearbeitet genug zu sein.
 Creating a connection
 \lstset{language=VBScript}
 
-\begin{lstlisting}
+\begin{lstlisting}[caption=Codebeispiel listen,label=lst:listing connect]
 ' Create a Connection object to connect to Quality Center
    Set tdConnection = CreateObject("TDApiOle80.TDConnection")
 'Initialise the Quality center connection
@@ -21,13 +21,16 @@ Creating a connection
    tdConnection.Login qcID, qcPWD
 'connecting to the domain and project
 	tdConnection.Connect qcDomain, qcProject
+	\caption das ist ein test
 \end{lstlisting}
+
+In \ref{=lst:listing connect} sehen wir wie die Verbindung über OTA aufgebaut wird
 
 Über dieses tdConnection Objekt können wir Objekte für HP ALM erstellen,
 löschen oder verändern. In unseren Fall sind das selbstgebaute Listen.
 
 \section{ Listen adden + Elemente}
-\begin{lstlisting}
+\begin{lstlisting}[caption=Codebeispiel listen,label=listing lists]
 ' custom is the connection with the elements, oList are the lists access
    Dim custom
     Set custom = tdConnection.Customization
@@ -44,6 +47,8 @@ löschen oder verändern. In unseren Fall sind das selbstgebaute Listen.
 End Sub
 \end{lstlisting}
 
+In Beispiel \ref{listing lists}sehen wir wie Listen dem HP Tool hinzugefügt
+werden
 
 In diesen Beispiel kann man erkennen das die Listen bevor sie geuploadet
 werd erst gelöscht werden. Was erst Gegenintuitive erscheinen mag wird so
@@ -54,6 +59,7 @@ Befehl einfach überspringt falls die Liste nicht vorhanden ist. So kommt es zu
 keinen Problemen.
 
 \section{Aus XML auslesen}
+\begin{lstlisting}[caption=Codebeispiel traverse,label=lst:listingXML]
 \begin{lstlisting}
 for each child in xmlDoc.SelectNodes("/qtpRep:ObjectRepository/qtpRep:Objects/qtpRep:Object")
   objectLevelName = child.getAttribute("Name")
@@ -78,6 +84,7 @@ for each child in xmlDoc.SelectNodes("/qtpRep:ObjectRepository/qtpRep:Objects/qt
    next
 next
 \end{lstlisting}
+Bei \ref{lst:listingXML} sehen wir wie die XML durchlaufen wird
 
 Das Herzstück dieses Projektes, das Durchlaufen der XML. Der erste Schritt ist
 das auslesen aller Knotenpunkte mit dem Befehl Select Nodes. Dieser beinhaltet
@@ -100,7 +107,7 @@ Die Variante wurde einem rekursiven Aufruf bevorzugt da die Schreibweise
 intuitiver erscheint und damit leichter zu warten ist. 
 
 \section{Listnamen Manipulation}
-\begin{lstlisting}
+\begin{lstlisting}[caption=Codebeispiel Listnamen,label=lst:listingName]
 for each list in listToAdd
 listName = getRightSideOfPipe(list)
 for each item in itemToAdd 
@@ -121,6 +128,7 @@ for each item in itemToAdd
   next
 custom.Commit
 \end{lstlisting}
+Bei \ref{lst:listingName} erkennen wir wie die Listennamen manipuliert werden
 
 Der Namen ist mit einer Pipe ``|'' getrennt. Auf der rechten Seite zeigt dieser
 an welches Objekt gerade im Focus steht. Im Gegensatz auf der linken Seite steht
@@ -134,4 +142,22 @@ alle Ebenen und Objekte im Zwischenbuffer oList abgelegt haben.
 
  *instert graphic with name description
 
-\section{Ergebnis}
+\section{Visualising software architecture von Simon Brown}
+
+ \begin{figure}[h]
+\includegraphics[width=\textwidth]{\string"img/component diagram 1".png}
+\caption{Hier wird ein Componenten Diagramm dargestellt der die einzelnen User
+anzeigt und die externen Systeme mit der es arbeitet. }
+\end{figure}
+
+ \begin{figure}[h]
+\includegraphics[width=\textwidth]{\string"img/component diagram 2".png}
+\caption{Hier gehen wir eine Ebene tiefer und zeigen die einzelnen
+Schnittstellen wie die einzelnen Componenten zusammen arbeiten}
+\end{figure}
+
+ \begin{figure}[h]
+\includegraphics[width=\textwidth]{\string"img/component diagram 3".png}
+\caption{Hier wird das die vorher beschriebene Componenten Zusammenspiel
+genauer angesehen und zeigt wo der Code liegt der als Schnittstelle fungiert}
+\end{figure}
