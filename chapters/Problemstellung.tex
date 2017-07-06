@@ -31,7 +31,6 @@ der grafischen Oberfläche.
 Im Besonderen darf das Projekt HP QC nicht deutlich langsamer machen. Wird das
 Tool bis zur Unbrauchbarkeit langsamer überwiegen die Nachteile den Vorteilen
 und das Projekt wird überflüssig.
-[Noch nicht sicher wo das hingehört]
 
 
 \section{Requirements}
@@ -51,21 +50,36 @@ Follow the approach of \cite{Lauesen2002}, begin with the goal requirements:
 Then define domain requirements:
 
 \begin{enumerate}[label=\bfseries D\arabic*:]
-  \item The user of the system shall be able to control the flying component.
-  \item Req...
+  \item Der User soll den Pfad einzelner ELemente über Dropdown Menüs auswählen
+  können
+  \item Es sollen vier Level an Dropdown Menü geben, ausschließend den Namen und
+  f+r welche der Applikation Tests geschrieben werden sollen
   \item Reg222
 \end{enumerate}
 
 Product requirements:
 
 \begin{enumerate}[label=\bfseries P\arabic*:]
-  \item The user shall enter the coordinates into the ground station to which the flying component should fly.
+  \item Die XML Dateien müssen in ein Format gebracht werden mit dem HP QC
+  arbeiten kann
+  \item Der Output muss Stufenweise passend zum XML Format
 \end{enumerate}
 
 Design requirements (or constraints):
 
 \begin{enumerate}[label=\bfseries C\arabic*:]
-  \item The user shall enter the coordinates into the ground station to which the flying component should fly.
+  \item Die XML Dateien können nicht geändert werden, das Format muss
+  beibehalten werden
+  \item HPQC darf beim einspielen nicht merklich langsamer werden
+  \item Der End User soll keine Wartezeiten beim Laden der Felder für den Path
+  habe 
+  \item Die Programmiersprache soll VBS
+  \item Das Sytem soll Fehler erkennen und so früh wie möglich diese Melden
+  \item Die Erweiterung soll ausbaubar sein
+  \item Der im Workflow geschriebene Code muss kombatibel mit dem restlichen da
+  angereichtern Code sein, ohne etwas vom Verhalten zu verändern
+  \item Es muss auf dem Betriebssystem Windows  10 funktionieren 
+  \item Elemente müssen eindeutig Verifizierbar sein
 \end{enumerate}
 
 When defining requirements, you can define functional requirements and also
